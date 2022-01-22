@@ -1,0 +1,23 @@
+/* .Logo {
+    background-image: url(./logo.png);
+  } */
+
+/* .navbar-container .navbar-logo {
+  grid-area: header;
+  height: 50px;
+  opacity: 60%;
+  justify-self: center;
+  align-self: center;
+} */
+.navbar {
+  background-color: #77BC3F;
+  /* padding: 2px; */
+}
+
+.navbar-logo {
+  height: 2px;
+  max-width: 100%;
+  height: auto;
+  padding: 0px;
+  margin: 1px
+}
