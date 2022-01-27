@@ -9,8 +9,13 @@ class Api::ProductsController < ApplicationController
 
     def show
         product = find_product
-        render json: product, status: :ok
+        render json: product, include: [
+            'company',
+            'reviews',
+            'reviews.user.username'
+        ] , status: :ok
     end
+    
     
     private
 

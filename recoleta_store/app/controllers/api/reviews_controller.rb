@@ -1,5 +1,5 @@
 class Api::ReviewsController < ApplicationController
-	protect_from_forgery with: :null_session
+	# protect_from_forgery with: :null_session
     rescue_from ActiveRecord::RecordNotFound, with: :render_not_found_response
 
 	def index
@@ -15,7 +15,9 @@ class Api::ReviewsController < ApplicationController
 	def create
 		review = Review.create(review_params)
 		if review.valid?
-			render json: review, status: :created
+			render json: review, include: [
+				'user.username'
+			], status: :created
 		else
 			render json: { error: review.errors }, status: :unprocessable_entity
 		end

@@ -5,4 +5,5 @@ class Product < ApplicationRecord
   def avg_star_rating
     reviews.average(:star_rating).round(2).to_f
   end
+  
 end

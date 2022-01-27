@@ -25,7 +25,7 @@ module RecoletaStore
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 6.1
     # config.generators.system_tests = nil
-    config.api_only = false
+    config.api_only = true
 
     # Adding cookies and session middleware
     config.middleware.use ActionDispatch::Cookies

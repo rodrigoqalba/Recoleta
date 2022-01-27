@@ -68,10 +68,11 @@ products = Product.create([
         price: 6,
         colors: "White",
         size: "S, M, L, XL",
-        image_url: "https://recoletaimages.s3.amazonaws.com/AdobeStock_329546005.jpeg",
+        image_url: "/images/White-T-shirt.jpeg",
         dimensions: "1 x 1 x 1 inches",
         weight: "8 Ounces",
         shipping_method: "Air, Sea",
+        category: "Clothes",
         company: companies.first
     },
     {
@@ -79,7 +80,7 @@ products = Product.create([
         price: 20,
         colors: "Black",
         size: "8-13 US, ",
-        image_url: "https://recoletaimages.s3.amazonaws.com/AdobeStock_372522156.jpeg",
+        image_url: "/images/Leather-shoes.jpeg",
         dimensions: "12.64 x 7.6 x 4.61 inches",
         weight: "2.45 Pounds",
         shipping_method: "Air, Sea",
@@ -90,10 +91,11 @@ products = Product.create([
         price: 4,
         colors: "Multicolor",
         size: "Medium cat",
-        image_url: "https://recoletaimages.s3.amazonaws.com/cat-shirt.jpeg",
+        image_url: "/images/cat-shirt.jpeg",
         dimensions: "9.72 x 6.46 x 0.63 inches",
         weight: "2.08 Ounces",
         shipping_method: "Land, Air, Sea",
+        category: "Pets",
         company: companies.second
     },
     {
@@ -101,10 +103,11 @@ products = Product.create([
         price: 5,
         colors: "Light Gray",
         size: "One Size Fits All",
-        image_url: "https://recoletaimages.s3.amazonaws.com/winter-hat.jpeg",
+        image_url: "/images/winter-hat.jpeg",
         dimensions: "8.1 x 7.6 x 2.4 inches",
         weight: "2 Ounces",
         shipping_method: "Air, Sea",
+        category: "Hats",
         company: companies.third
     }
 ])

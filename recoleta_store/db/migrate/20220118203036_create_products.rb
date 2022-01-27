@@ -9,6 +9,7 @@ class CreateProducts < ActiveRecord::Migration[6.1]
       t.string :dimensions
       t.string :weight
       t.string :shipping_method
+      t.string :category
       t.belongs_to :company, null: false, foreign_key: true
 
       t.timestamps
