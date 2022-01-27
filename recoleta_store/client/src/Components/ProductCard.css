@@ -1,0 +1,58 @@
+.adventure-list {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 40px;
+	max-width: 1200px;
+	margin: 40px 80px;
+    color: rgb(0, 0, 0);
+}
+.adventure-list .card {
+	background: rgb(255, 255, 255);
+	color: rgb(0, 0, 0);
+	padding: 20px;
+	border-radius: 4px;
+	box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.05);
+	transition: all 0.3s ease;
+	position: relative;
+	justify-content: center;
+	text-align: center;
+	margin-left: 10px;
+}
+.adventure-list .card:hover {
+	transform: scale(1.04, 1.04);
+}
+.adventure-list .card h3 {
+	color: rgb(0, 0, 0);
+	margin-bottom: 6px;
+}
+.adventure-list .card p {
+	color: #999;
+	font-size: 0.9em;
+}
+.adventure-list .card div {
+	color: #555;
+	font-size: 0.7em;
+	margin: 20px 0;
+	line-height: 1.5em;
+}
+.adventure-list .card a {
+	color: #555;
+	text-decoration: none;
+	display: block;
+	background: #e2e2e2;
+	font-size: 0.9em;
+	width: 100px;
+	text-align: center;
+	width: 120px;
+	padding: 8px;
+	border-radius: 4px;
+	margin: 20px auto 0;
+}
+.adventure-list .card.dark {
+	background: #555;
+}
+.adventure-list .card.dark p,
+.adventure-list .card.dark h3,
+.adventure-list .card.dark div {
+	color: #e4e4e4;
+}

@@ -1,17 +1,19 @@
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
+import { useFetch } from '../hooks/useFetch'
+import ProductContainer from "../Components/ProductContainer";
+import './ProductList.css'
+
 
 function ProductList() {
-  const [products, setProducts] = useState([]);
 
-  useEffect(() => {
-    fetch("/api/products")
-      .then((r) => r.json())
-      .then(setProducts);
-  }, []);
+  const { data } = useFetch('/api/products')
 
   return (
-    <>
-      <h1>Hello world</h1>
+    <>    
+      <h1 className="product-name">Products</h1>
+      <div className="product-list">
+        {data && <ProductContainer products={data} />}
+      </div>
     </>
   );
 }
