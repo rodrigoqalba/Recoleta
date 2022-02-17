@@ -7,3 +7,4 @@ class FallbackController < ActionController::API
       render file: 'public/index.html'
     end
   end
+end
