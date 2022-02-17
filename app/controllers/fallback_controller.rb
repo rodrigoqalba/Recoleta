@@ -6,5 +6,4 @@ class FallbackController < ActionController::API
       # React app index page
       render file: 'public/index.html'
     end
-  end
 end
