@@ -1,0 +1,13 @@
+.name {
+    text-align: center;
+}
+
+.line {
+    border-top: 3px solid #77BC3F;
+    padding-top: 20px;
+}
+
+.product-info {
+    text-align: left;
+    padding: 10px;
+}

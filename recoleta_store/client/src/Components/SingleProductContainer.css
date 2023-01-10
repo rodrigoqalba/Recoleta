@@ -1,0 +1,44 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 5fr);
+    grid-auto-rows: minmax(100px, auto);
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    grid-gap: 10px;
+    max-width: 100%;
+    grid-template-areas: 
+        "image       product-info"
+        "image       product-info"
+        "image       company"
+        "reviews     reviews";
+}
+
+.image {
+    grid-area: image;
+    background-color: #77BC3F;
+    /* height: 62vh; */
+}
+
+.product-info {
+    grid-area: product-info;
+    background-color: white;
+    color: black;
+    padding-top: 5px;
+}
+
+.company {
+    grid-area: company;
+    background-color: white;
+    color: black;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.reviews {
+    grid-area: reviews;
+    background-color: white;
+    color: black;    
+    text-align: center;
+    padding-top: 10px;
+}
