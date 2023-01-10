@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/static/css/main.60bec789.css",
+    "main.js": "/static/js/main.a301c420.js",
+    "static/media/Recoleta-logos_transparent copy.png": "/static/media/Recoleta-logos_transparent copy.757b0c026d149bd5a46e.png",
+    "index.html": "/index.html",
+    "main.60bec789.css.map": "/static/css/main.60bec789.css.map",
+    "main.a301c420.js.map": "/static/js/main.a301c420.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.60bec789.css",
+    "static/js/main.a301c420.js"
+  ]
+}

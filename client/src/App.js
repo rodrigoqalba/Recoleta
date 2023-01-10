@@ -7,7 +7,6 @@ import ProductPage from "./pages/ProductPage"
 import './App.css';
 import Home from './pages/Home';
 
-
 // require('react-dom');
 // window.React2 = require('react');
 // console.log(window.React1 === window.React2);
