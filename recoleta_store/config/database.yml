@@ -81,6 +81,7 @@ test:
 #
 production:
   <<: *default
-  database: recoleta_store_production
-  username: recoleta_store
-  password: <%= ENV['RECOLETA_STORE_DATABASE_PASSWORD'] %>
+  url: <%= ENV['DATABASE_URL'] %>
+  # database: recoleta_store_production
+  # username: recoleta_store
+  # password: <%= ENV['RECOLETA_STORE_DATABASE_PASSWORD'] %>
